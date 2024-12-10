@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Crop Recommendation System</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="static/styles.css" />
+  </head>
+  <body>
+    <!-- Background Video -->
+    <video autoplay muted loop id="backgroundVideo">
+      <source src="static/1988560-uhd_3840_2160_24fps.mp4" type="video/mp4" />
+      Your browser does not support the video tag.
+    </video>
+
+    <div class="background">
+      <div class="container">
+        <h1>Crop Recommendation System</h1>
+        <form id="cropForm">
+          <div class="form-group">
+            <label for="N">Nitrogen (N):</label>
+            <input type="number" id="N" name="N" required />
+          </div>
+          <div class="form-group">
+            <label for="P">Phosphorus (P):</label>
+            <input type="number" id="P" name="P" required />
+          </div>
+          <div class="form-group">
+            <label for="K">Potassium (K):</label>
+            <input type="number" id="K" name="K" required />
+          </div>
+          <div class="form-group">
+            <label for="temperature">Temperature (°C):</label>
+            <input type="number" id="temperature" name="temperature" required />
+          </div>
+          <div class="form-group">
+            <label for="humidity">Humidity (%):</label>
+            <input type="number" id="humidity" name="humidity" required />
+          </div>
+          <div class="form-group">
+            <label for="ph">pH Level:</label>
+            <input type="number" id="ph" name="ph" required />
+          </div>
+          <div class="form-group">
+            <label for="rainfall">Rainfall (mm):</label>
+            <input type="number" id="rainfall" name="rainfall" required />
+          </div>
+          <button type="submit">Predict Crop</button>
+        </form>
+        <div id="result" class="hidden"></div>
+      </div>
+    </div>
+    <script src="static/scripts.js"></script>
+  </body>
+</html>
